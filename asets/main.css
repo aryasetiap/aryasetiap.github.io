@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Quicksand&display=swap');
+
+* {
+    font-family: 'Jua';
+}
+
+/* CSS Normal size */
+/* header mulai */
+header {
+    height: 120px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    color: #20262E;
+    margin-left: 60px;
+}
+
+.logo p {
+    margin-right: 12px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 7px 40px;
+    margin-right: 30px;
+    color: white;
+    font-size: 20px;
+    background-color: #3E6D9C;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+nav ul li:hover { 
+    background-color: white;
+    color: #3E6D9C;
+}
+/* header selesai */
+
+/* container 1 mulai */
+.container-1 {
+    height: 512px;
+    padding: 45px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #20262E;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+.container-1 p {
+    font-size: 32px;
+    margin: -10px 0px;
+}
+/* container 1 selesai */
+
+/* container 2 mulai */
+.container-2 {
+    height: 470px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,189,62,1) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 110px 236px 145px;
+}
+
+.container-2 div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    align-items: flex-start;
+}
+
+.container-2 p:first-child {
+    margin-bottom: 32px;
+}
+.container-2 p {
+    font-size: 24px;
+    color: white;
+    padding: 13px 45px;
+    border-radius: 20px;
+    background-color: #20262E;
+}
+/* container 2 selesai */
+
+/* container 3 mulai */
+.container-3 {
+    height: 1480px;
+    background-color: #151515;
+    padding: 115px 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.title h2 {
+    font-size: 64px;
+    color: #E9E8E8;
+    margin-left: 15px;
+}
+
+.skill-logo {
+    align-items: center;
+    justify-content: center;
+    width: 1020px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo p {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 30px auto 0px;
+}
+/* container 3 selesai */
+
+/* container 4 mulai */
+.container-4 {
+    height: fit-content;
+    background-color: #E9E8E8;
+    padding: 80px 16%;
+    color: #20262E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 { 
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.cont-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 21px;
+}
+
+.contact img {
+    margin-right: 24px;
+}
+/* container 4 selesai */
+
+/* footer mulai */
+footer {
+    background-color: #20262E;
+    padding: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E9E8E8;
+}
+
+h4 { 
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+footer p:last-child {
+    margin-top: 4px;
+    font-size: 16px;
+}
+/* footer selesai */
