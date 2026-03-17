@@ -112,22 +112,20 @@
 
 ### 4.1 Hero Section
 
-- [ ] Fetch data `author` dari Sanity (nama, bio)
-- [ ] Implementasikan teks Hero dengan `framer-motion`:
-  - `initial: { opacity: 0, y: 20 }` → `animate: { opacity: 1, y: 0 }`
-  - Staggered delay untuk tiap baris teks
-- [ ] Tambahkan CTA button: "View Projects" → `/projects`, "Download CV" → file Sanity
+- [x] Fetch data `author` dari Sanity (nama, bio) <!-- id: 4.1 -->
+- [x] Implementasikan teks Hero dengan `framer-motion` <!-- id: 4.2 -->
+- [x] Tambahkan CTA button: "View Projects" dan "Download CV" <!-- id: 4.3 -->
 
 ### 4.2 Skill / Tech Highlight Section
 
-- [ ] Buat grid ikon teknologi yang dikuasai
-- [ ] Animasi masuk: `whileInView` Framer Motion
+- [x] Buat grid ikon teknologi <!-- id: 4.4 -->
+- [x] Animasi masuk: `whileInView` Framer Motion <!-- id: 4.5 -->
 
 ### 4.3 Featured Projects Section
 
-- [ ] Fetch 3 project terbaru dari Sanity
-- [ ] Render sebagai kartu ringkasan horizontal/bento
-- [ ] Tambahkan link "See All Projects" → `/projects`
+- [x] Fetch 3 project terbaru dari Sanity <!-- id: 4.6 -->
+- [x] Render sebagai kartu ringkasan horizontal/bento <!-- id: 4.7 -->
+- [x] Tambahkan link "See All Projects" → `/projects` <!-- id: 4.8 -->
 
 ---
 
@@ -233,8 +231,8 @@
 ```
 [x] Fase 1: Setup & Environment
 [x] Fase 2: Sanity CMS
-[/] Fase 3: UI Foundation
-[ ] Fase 4: Homepage
+[x] Fase 3: UI Foundation
+[x] Fase 4: Homepage
 [ ] Fase 5: Projects Pages
 [ ] Fase 6: About Page
 [ ] Fase 7: ISR Webhook
