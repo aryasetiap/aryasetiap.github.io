@@ -174,8 +174,8 @@
 
 ### 7.2 Konfigurasi Webhook di Sanity
 
-- [ ] Buka Sanity dashboard → API → Webhooks
-- [ ] Buat webhook baru:
+- [x] Buka Sanity dashboard → API → Webhooks
+- [x] Buat webhook baru:
   - **URL:** `https://your-domain.vercel.app/api/revalidate`
   - **Trigger:** On publish (filter: `project` AND `author`)
   - **Secret:** sesuai `SANITY_REVALIDATE_SECRET`
@@ -188,19 +188,19 @@
 
 ### 8.1 Push ke GitHub
 
-- [ ] Inisialisasi git: `git init`
-- [ ] Buat repository baru di GitHub: `aryasetiap/aryasetiap.github.io`
-- [ ] Tambahkan remote dan push: `git push -u origin main`
+- [x] Inisialisasi git: `git init`
+- [x] Buat repository baru di GitHub: `aryasetiap/aryasetiap.github.io`
+- [x] Tambahkan remote dan push: `git push -u origin main`
 
 ### 8.2 Konfigurasi Vercel
 
-- [ ] Login ke [vercel.com](https://vercel.com/) dan import repository
-- [ ] Tambahkan semua environment variables dari `.env.local` ke Vercel dashboard
-- [ ] Verifikasi auto-deploy aktif pada push ke branch `main`
+- [x] Login ke [vercel.com](https://vercel.com/) dan import repository
+- [x] Tambahkan semua environment variables dari `.env.local` ke Vercel dashboard
+- [x] Verifikasi auto-deploy aktif pada push ke branch `main`
 
 ### 8.3 Update Webhook Sanity
 
-- [ ] Update URL webhook Sanity ke URL produksi Vercel (bukan localhost)
+- [x] Update URL webhook Sanity ke URL produksi Vercel (bukan localhost)
 
 ### 8.4 Validasi Produksi
 
@@ -233,6 +233,6 @@
 [x] Fase 5: Projects Pages
 [x] Fase 6: About Page
 [x] Fase 7: ISR Webhook
-[/] Fase 8: Deployment
+[x] Fase 8: Deployment
 [ ] Fase 9: Polish & QA
 ```
