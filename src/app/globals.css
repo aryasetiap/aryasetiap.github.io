@@ -1,19 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-50: oklch(0.97 0.01 230);
+  --color-brand-100: oklch(0.93 0.03 230);
+  --color-brand-200: oklch(0.87 0.06 230);
+  --color-brand-300: oklch(0.8 0.1 230);
+  --color-brand-400: oklch(0.7 0.14 230);
+  --color-brand-500: oklch(0.6 0.18 230);
+  --color-brand-600: oklch(0.5 0.2 230);
+  --color-brand-700: oklch(0.4 0.18 230);
+  --color-brand-800: oklch(0.3 0.14 230);
+  --color-brand-900: oklch(0.2 0.08 230);
+
+  --color-accent-blue: oklch(0.7 0.2 250);
+  --color-accent-cyan: oklch(0.7 0.15 190);
+  
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.15 0.02 240);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.1);
+  }
+
+  .dark {
+    --background: oklch(0.12 0.02 240);
+    --foreground: oklch(0.95 0.01 240);
+    --glass-bg: rgba(15, 23, 42, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-(--glass-bg) border-(--glass-border) transition-all duration-300;
+  }
+  
+  .glass-hover {
+    @apply hover:bg-[rgba(255,255,255,0.85)] dark:hover:bg-[rgba(30,41,59,0.85)] hover:border-accent-blue hover:shadow-lg hover:shadow-blue-500/10;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-linear-to-r from-accent-blue to-accent-cyan;
+  }
 }

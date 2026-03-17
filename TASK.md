@@ -82,31 +82,27 @@
 
 **Prioritas: Tinggi | Dependensi: Fase 1**
 
-### 3.1 Design System (Tailwind Config)
+### 3.1 Design System (Tailwind v4 CSS)
 
-- [ ] Edit `tailwind.config.ts`:
-  - Aktifkan dark mode: `darkMode: 'class'`
-  - Tambahkan custom color palette (berbasis slate/zinc + aksen cyan/indigo)
-  - Tambahkan custom font (Inter atau Outfit dari Google Fonts)
-- [ ] Edit `src/app/globals.css`:
-  - Definisikan CSS variables untuk warna mode gelap/terang
-  - Tambahkan base styles untuk body, scrollbar, dan selection
+- [x] Edit `src/app/globals.css` <!-- id: 3.1 -->
+  - Tambahkan custom theme variables (slate/zinc + cyan/indigo)
+  - Konfigurasi font (Outfit/Inter via next/font)
+- [x] Definisikan utility classes tambahan jika diperlukan <!-- id: 3.2 -->
 
 ### 3.2 Root Layout (`src/app/layout.tsx`)
 
-- [ ] Setup `<html>` dengan class `dark` untuk default dark mode
-- [ ] Tambahkan `<Navbar />` komponen
-- [ ] Tambahkan `<Footer />` komponen
-- [ ] Tambahkan Google Fonts (via `next/font/google`)
-- [ ] Tambahkan metadata SEO global (title template, description)
+- [x] Setup `<html>` dengan `dark` class default <!-- id: 3.3 -->
+- [x] Tambahkan Google Fonts (Outfit) <!-- id: 3.4 -->
+- [x] Tambahkan Metadata SEO global <!-- id: 3.5 -->
+- [x] Buat strukur layout dengan `<Navbar />` dan `<Footer />` <!-- id: 3.6 -->
 
 ### 3.3 Komponen UI Dasar (`src/components/ui/`)
 
-- [ ] `Button.tsx` — Glassmorphism style, variant: primary / ghost / outline
-- [ ] `Card.tsx` — Glassmorphism card dengan `backdrop-blur`
-- [ ] `Badge.tsx` — Untuk tampilkan tech stack label di project
-- [ ] `Navbar.tsx` — Sticky, backdrop-blur, link ke `/projects` dan `/about`
-- [ ] `Footer.tsx` — Social links, copyright
+- [x] `Button.tsx` — Glassmorphism style <!-- id: 3.7 -->
+- [x] `Card.tsx` — Glassmorphism card <!-- id: 3.8 -->
+- [x] `Badge.tsx` — Tech stack label <!-- id: 3.9 -->
+- [x] `Navbar.tsx` — Sticky, blur effect <!-- id: 3.10 -->
+- [x] `Footer.tsx` — Social links <!-- id: 3.11 -->
 
 ---
 
@@ -237,7 +233,7 @@
 ```
 [x] Fase 1: Setup & Environment
 [x] Fase 2: Sanity CMS
-[ ] Fase 3: UI Foundation
+[/] Fase 3: UI Foundation
 [ ] Fase 4: Homepage
 [ ] Fase 5: Projects Pages
 [ ] Fase 6: About Page
