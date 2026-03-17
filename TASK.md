@@ -135,21 +135,18 @@
 
 ### 5.1 Project List Page (`src/app/projects/page.tsx`)
 
-- [ ] Fetch semua project dari Sanity menggunakan GROQ
-- [ ] Render dalam **Bento Grid layout** (responsive, variable card sizes)
-- [ ] Implementasikan `staggered animation` untuk card:
-  ```tsx
-  variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0 } }}
-  ```
-- [ ] Setiap card menampilkan: cover image, title, summary, tech stack badges, link ke detail
+- [x] Fetch semua project dari Sanity menggunakan GROQ <!-- id: 5.1 -->
+- [x] Render dalam **Bento Grid layout** <!-- id: 5.2 -->
+- [x] Implementasikan `staggered animation` untuk card <!-- id: 5.3 -->
+- [x] Tampilkan: cover, title, summary, tech stack <!-- id: 5.4 -->
 
 ### 5.2 Project Detail Page (`src/app/projects/[slug]/page.tsx`)
 
-- [ ] Implementasikan `generateStaticParams` untuk SSG semua slug
-- [ ] Implementasikan `generateMetadata` untuk SEO per halaman
-- [ ] Fetch single project by slug dari Sanity
-- [ ] Render `content` (Portable Text) menggunakan `@portabletext/react`
-- [ ] Tampilkan: cover image, tech stack, link GitHub, konten artikel
+- [x] Implementasikan `generateStaticParams` (SSG) <!-- id: 5.5 -->
+- [x] Implementasikan `generateMetadata` (SEO) <!-- id: 5.6 -->
+- [x] Fetch single project by slug dari Sanity <!-- id: 5.7 -->
+- [x] Render `content` (Portable Text) <!-- id: 5.8 -->
+- [x] Tampilkan eksternal link (GitHub/Demo) <!-- id: 5.9 -->
 
 ---
 
@@ -233,7 +230,7 @@
 [x] Fase 2: Sanity CMS
 [x] Fase 3: UI Foundation
 [x] Fase 4: Homepage
-[ ] Fase 5: Projects Pages
+[x] Fase 5: Projects Pages
 [ ] Fase 6: About Page
 [ ] Fase 7: ISR Webhook
 [ ] Fase 8: Deployment
