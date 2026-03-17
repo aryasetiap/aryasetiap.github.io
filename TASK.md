@@ -154,10 +154,10 @@
 
 **Prioritas: Sedang | Dependensi: Fase 2, Fase 3**
 
-- [ ] Fetch data `author` dari Sanity
-- [ ] Tampilkan: nama, bio lengkap (Portable Text), foto profil
-- [ ] Tombol "Download CV" yang link ke file PDF dari Sanity
-- [ ] Social links (LinkedIn, GitHub, Email) menggunakan komponen `Button`
+- [x] Fetch data `author` dari Sanity <!-- id: 6.1 -->
+- [x] Tampilkan: nama, bio lengkap, foto profil <!-- id: 6.2 -->
+- [x] Tombol "Download CV" (PDF URL) <!-- id: 6.3 -->
+- [x] Social links (LinkedIn, GitHub, Email) <!-- id: 6.4 -->
 
 ---
 
@@ -231,8 +231,8 @@
 [x] Fase 3: UI Foundation
 [x] Fase 4: Homepage
 [x] Fase 5: Projects Pages
-[ ] Fase 6: About Page
-[ ] Fase 7: ISR Webhook
+[x] Fase 6: About Page
+[/] Fase 7: ISR Webhook
 [ ] Fase 8: Deployment
 [ ] Fase 9: Polish & QA
 ```
