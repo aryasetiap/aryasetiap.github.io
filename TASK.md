@@ -167,10 +167,10 @@
 
 ### 7.1 API Route untuk Revalidasi
 
-- [ ] Buat `src/app/api/revalidate/route.ts`:
-  - Validasi `SANITY_REVALIDATE_SECRET` dari header/request
-  - Jalankan `revalidatePath('/projects')` dan `revalidatePath('/about')` dan `revalidatePath('/')`
-  - Return response `{ revalidated: true }`
+- [x] Buat API Route `src/app/api/revalidate/route.ts` <!-- id: 7.1 -->
+- [x] Validasi `SANITY_REVALIDATE_SECRET` <!-- id: 7.2 -->
+- [x] Implementasikan logic `revalidatePath` berdasarkan `_type` <!-- id: 7.3 -->
+- [x] Tambahkan logs untuk debugging revalidasi <!-- id: 7.4 -->
 
 ### 7.2 Konfigurasi Webhook di Sanity
 
@@ -232,7 +232,7 @@
 [x] Fase 4: Homepage
 [x] Fase 5: Projects Pages
 [x] Fase 6: About Page
-[/] Fase 7: ISR Webhook
-[ ] Fase 8: Deployment
+[x] Fase 7: ISR Webhook
+[/] Fase 8: Deployment
 [ ] Fase 9: Polish & QA
 ```
