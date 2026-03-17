@@ -11,10 +11,10 @@
 
 ### 1.1 Inisialisasi Next.js Project
 
-- [ ] Jalankan `npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir`
-- [ ] Verifikasi struktur direktori: `src/app/`, `src/components/`, dll.
-- [ ] Hapus file boilerplate default (`page.tsx`, `globals.css` bawaan)
-- [ ] Buat struktur folder manual:
+- [x] Jalankan `npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir` <!-- id: 1.1 -->
+- [x] Verifikasi struktur direktori: `src/app/`, `src/components/`, dll. <!-- id: 1.2 -->
+- [x] Hapus file boilerplate default (`page.tsx`, `globals.css` bawaan) <!-- id: 1.3 -->
+- [x] Buat struktur folder manual <!-- id: 1.4 -->
   ```
   src/
   ├── app/
@@ -31,22 +31,17 @@
 
 ### 1.2 Instalasi Dependensi Utama
 
-- [ ] Instal Framer Motion: `npm install framer-motion`
-- [ ] Instal Sanity SDK: `npm install next-sanity @sanity/image-url @portabletext/react`
-- [ ] Instal Sanity CLI (global): `npm install -g @sanity/cli`
-- [ ] Verifikasi semua packages di `package.json`
+- [x] Instal Framer Motion: `npm install framer-motion` <!-- id: 1.5 -->
+- [x] Instal Sanity SDK: `npm install next-sanity @sanity/image-url @portabletext/react` <!-- id: 1.6 -->
+- [x] Instal Sanity CLI (global): `npm install -g @sanity/cli` <!-- id: 1.7 -->
+- [x] Verifikasi semua packages di `package.json` <!-- id: 1.8 -->
 
 ### 1.3 Setup Environment Variables
 
-- [ ] Buat file `.env.local` di root project
-- [ ] Tambahkan variabel berikut:
-  ```env
-  NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
-  NEXT_PUBLIC_SANITY_DATASET=production
-  SANITY_API_TOKEN=your_api_token
-  SANITY_REVALIDATE_SECRET=your_webhook_secret
-  ```
-- [ ] Tambahkan `.env.local` ke `.gitignore`
+- [X] Buat file `.env.local` di root project <!-- id: 1.9 -->
+- [X] Tambahkan variabel berikut <!-- id: 1.10 -->
+- [X] Tambahkan `.env.local` ke `.gitignore` <!-- id: 1.11 -->
+- [x] Perbaiki sintaks Tailwind CSS v4 di `globals.css` <!-- id: 1.12 -->
 
 ---
 
@@ -258,7 +253,7 @@
 ## ✅ Checklist Selesai
 
 ```
-[ ] Fase 1: Setup & Environment
+[x] Fase 1: Setup & Environment
 [ ] Fase 2: Sanity CMS
 [ ] Fase 3: UI Foundation
 [ ] Fase 4: Homepage
