@@ -51,48 +51,30 @@
 
 ### 2.1 Buat Sanity Project
 
-- [ ] Login ke [sanity.io](https://www.sanity.io/) dan buat project baru
-- [ ] Catat `projectId` dan `dataset` name
-- [ ] Isikan ke `.env.local`
+- [x] Login ke [sanity.io](https://www.sanity.io/) dan buat project baru <!-- id: 2.1 -->
+- [x] Catat `projectId` dan `dataset` name <!-- id: 2.2 -->
+- [x] Isikan ke `.env.local` <!-- id: 2.3 -->
 
 ### 2.2 Konfigurasi Sanity Client
 
-- [ ] Buat file `src/sanity/lib/client.ts`:
-  - Konfigurasi `createClient` dengan `projectId`, `dataset`, `apiVersion`, `useCdn`
-  - Aktifkan `stega` atau live preview jika diperlukan
-- [ ] Buat file `src/sanity/lib/queries.ts`:
-  - Definisikan GROQ query untuk list projects
-  - Definisikan GROQ query untuk single project by slug
-  - Definisikan GROQ query untuk author profile
-- [ ] Buat file `src/sanity/lib/image.ts`:
-  - Konfigurasi `imageUrlBuilder` untuk generate URL gambar Sanity
+- [x] Buat file `src/sanity/lib/client.ts` <!-- id: 2.4 -->
+- [x] Buat file `src/sanity/lib/queries.ts` <!-- id: 2.5 -->
+- [x] Buat file `src/sanity/lib/image.ts` <!-- id: 2.6 -->
 
 ### 2.3 Definisikan Sanity Schema
 
-- [ ] Buat `src/sanity/schemas/project.ts`:
-  - `title` (string, required)
-  - `slug` (slug, from title)
-  - `summary` (text)
-  - `coverImage` (image + alt)
-  - `techStack` (array of strings)
-  - `repositoryUrl` (url)
-  - `content` (portableText/block content)
-- [ ] Buat `src/sanity/schemas/author.ts`:
-  - `name` (string, required)
-  - `bio` (block content)
-  - `resume` (file — PDF)
-  - `socialLinks` (array of objects: {platform, url})
-- [ ] Buat `src/sanity/schemas/index.ts`:
-  - Export semua schema sebagai array
-- [ ] Buat `src/sanity/sanity.config.ts`:
-  - Daftarkan semua schema ke Sanity Studio config
+- [x] Buat `src/sanity/schemas/project.ts` <!-- id: 2.7 -->
+- [x] Buat `src/sanity/schemas/author.ts` <!-- id: 2.8 -->
+- [x] Buat `src/sanity/schemas/index.ts` <!-- id: 2.9 -->
+- [x] Buat `src/sanity/sanity.config.ts` <!-- id: 2.10 -->
+- [x] Buat `src/app/admin/[[...index]]/page.tsx` untuk render Studio <!-- id: 2.11 -->
 
 ### 2.4 Deploy & Populasi Data di Sanity Studio
 
-- [ ] Jalankan Sanity Studio lokal: `npx sanity dev`
-- [ ] Buat minimal 1 entri `author` (profil sendiri)
-- [ ] Buat minimal 3 entri `project` untuk testing
-- [ ] Upload gambar cover untuk setiap project
+- [x] Jalankan Sanity Studio lokal: `npx sanity dev` <!-- id: 2.12 -->
+- [x] Buat minimal 1 entri `author` (profil sendiri) <!-- id: 2.13 -->
+- [x] Buat minimal 3 entri `project` untuk testing <!-- id: 2.14 -->
+- [x] Upload gambar cover untuk setiap project <!-- id: 2.15 -->
 
 ---
 
@@ -254,7 +236,7 @@
 
 ```
 [x] Fase 1: Setup & Environment
-[ ] Fase 2: Sanity CMS
+[x] Fase 2: Sanity CMS
 [ ] Fase 3: UI Foundation
 [ ] Fase 4: Homepage
 [ ] Fase 5: Projects Pages
